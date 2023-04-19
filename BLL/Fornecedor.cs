@@ -56,16 +56,35 @@ namespace BLL
             {
 
                 con = new Conexao();//instanciação do objeto con
-                string sql = $"select * from tb_fornecedor"; 
+                string sql = $"select * from tb_fornecedor";
                 DataTable dt = new DataTable();
                 dt = con.Retorna(sql);
                 return dt;
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 return new DataTable();
             }
 
-        }
-    }
 
+        }
+        public DataTable PesquisarId()
+        {
+            try
+            {
+
+                con = new Conexao();//instanciação do objeto con
+                string sql = $"select * from tb_fornecedor where" +
+                    $"forn_id={Id}";
+                DataTable dt = new DataTable();
+                dt = con.Retorna(sql);
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                return new DataTable();
+            }
+        }
+
+    }
 }
