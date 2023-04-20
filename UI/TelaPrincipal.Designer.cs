@@ -47,14 +47,14 @@
             // 
             this.pnl_Tela.Location = new System.Drawing.Point(24, 60);
             this.pnl_Tela.Name = "pnl_Tela";
-            this.pnl_Tela.Size = new System.Drawing.Size(755, 378);
+            this.pnl_Tela.Size = new System.Drawing.Size(755, 489);
             this.pnl_Tela.TabIndex = 1;
             // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 561);
             this.Controls.Add(this.pnl_Tela);
             this.Controls.Add(this.btn_Fornecedor);
             this.Name = "TelaPrincipal";

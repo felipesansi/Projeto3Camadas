@@ -69,5 +69,17 @@ namespace Projeto3Camadas
             }
             CarregaTabela();
         }
+
+        private void dgv_Dados_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            forn.Id = Convert.ToInt32(dgv_Dados["forn_id", e.RowIndex].Value);
+            DataTable dt = forn.PesquisarId();
+            txt_ID.Text = dt.Rows[0]["forn_id"].ToString();
+            mtxt_Cnpj.Text = dt.Rows[0]["forn_cnpj"].ToString();
+            txt_Email.Text = dt.Rows[0]["forn_email"].ToString();
+            txt_RSocial.Text = dt.Rows[0]["forn_razao"].ToString();
+            mtxt_Telefone.Text = dt.Rows[0]["forn_telefone"].ToString();
+
+        }
     }
 }

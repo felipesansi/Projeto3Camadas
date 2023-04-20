@@ -37,7 +37,7 @@ namespace BLL
             con = new Conexao();//instanciação do objeto con
             string sql = $"update tb_fornecedor set forn_razao='{Razao}'," +
                 $"forn_cnpj='{Cnpj}', forn_telefone='{Telefone}', " +
-                $"forn_email='{Email}' where forn_id{Id}";
+                $"forn_email='{Email}' where forn_id={Id}";
             return con.Executa(sql);//executa esse string sql e retorna true ou false
 
         }
@@ -74,8 +74,7 @@ namespace BLL
             {
 
                 con = new Conexao();//instanciação do objeto con
-                string sql = $"select * from tb_fornecedor where" +
-                    $"forn_id={Id}";
+                string sql = $"select * from tb_fornecedor where forn_id={Id}";
                 DataTable dt = new DataTable();
                 dt = con.Retorna(sql);
                 return dt;

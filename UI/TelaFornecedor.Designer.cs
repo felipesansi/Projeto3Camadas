@@ -177,12 +177,13 @@
             this.dgv_Dados.Name = "dgv_Dados";
             this.dgv_Dados.Size = new System.Drawing.Size(730, 159);
             this.dgv_Dados.TabIndex = 15;
+            this.dgv_Dados.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Dados_CellDoubleClick);
             // 
             // TelaFornecedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 506);
+            this.ClientSize = new System.Drawing.Size(800, 555);
             this.Controls.Add(this.dgv_Dados);
             this.Controls.Add(this.btn_Excluir);
             this.Controls.Add(this.btn_Atualizar);
