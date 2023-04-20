@@ -1,0 +1,7 @@
+CREATE TABLE `bd_teste`.`tb_fornecedor` (
+  `forn_id` INT NOT NULL AUTO_INCREMENT,
+  `forn_razao` VARCHAR(45) NULL,
+  `forn_cnpj` VARCHAR(45) NULL,
+  `forn_telefone` VARCHAR(45) NULL,
+  `forn_email` VARCHAR(45) NULL,
+  PRIMARY KEY (`forn_id`));
